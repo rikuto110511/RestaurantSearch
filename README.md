@@ -2,6 +2,9 @@
 ## アプリ概要
 * 現在地周辺の飲食店を検索する。
 
+## 画面イメージ
+![ios.png](./ios.png)
+
 ## 使用機能（デフォルトの機能以外）
 * React Navigation & createStackNavigator
     * 画面遷移時に使用する。
