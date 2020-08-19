@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, SafeAreaView, View, Slider } from "react-native";
 import Button from "../components/Button";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 const styles = StyleSheet.create({
   container: {
@@ -32,11 +33,10 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen = () => {
-  const [searchRange, setSearchRange] = useState(300);
+export default HomeScreen = ({ navigation }) => {
+  const [searchRange, setSearchRange] = useState(500);
   return (
     <SafeAreaView style={styles.container}>
-      {/* <StatusBar style="auto" /> */}
       <View style={styles.buttonTopContainer}>
         <Button buttonName="ios-cafe" displayValue="カフェ・デザート" />
         <Button buttonName="ios-restaurant" displayValue="おひるごはん" />
@@ -48,7 +48,7 @@ export default HomeScreen = () => {
         <Text style={styles.rangeLabel}>現在地から：{searchRange}m</Text>
         <Slider
           minimumValue={0}
-          maximumValue={600}
+          maximumValue={1000}
           minimumTrackTintColor="#1EB1FC"
           maximumTractTintColor="#1EB1FC"
           step={1}
@@ -57,6 +57,11 @@ export default HomeScreen = () => {
           style={styles.slider}
           thumbTintColor="#1EB1FC"
         />
+      </View>
+      <View>
+        <TouchableOpacity onPress={() => navigation.navigate("検索結果")}>
+          <Text>TEST</Text>
+        </TouchableOpacity>
       </View>
 
       {/* ダミー */}

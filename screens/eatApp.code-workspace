@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../react-native-news/news-app"
+	},
+	{
+		"path": "../../react-native-apps/myQuiz"
+	}
+],
+  "settings": {}
+}

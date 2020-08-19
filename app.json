@@ -19,8 +19,17 @@
     "ios": {
       "supportsTablet": true
     },
+    "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDEV1IMND5izyBu_JFjy2abeTSPkUh0HdM"
+        }
+      }
+    },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/rikuto110511/RestaurantSearch"
   }
 }

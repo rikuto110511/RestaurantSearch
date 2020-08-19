@@ -13,8 +13,12 @@ const styles = StyleSheet.create({
 });
 
 const Button = ({ buttonName, displayValue }) => {
+  const testFunction = () => {
+    alert(displayValue);
+  };
+
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={testFunction}>
       <Ionicons name={buttonName} size={150} color="black" />
       <Text style={styles.buttonLabel}>{displayValue}</Text>
     </TouchableOpacity>
