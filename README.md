@@ -27,6 +27,13 @@
         ```
         npm install axios
         ```
+* react-native-snap-carousel
+    * カルーセル
+    * ボタンの表示に使用する。
+    * インストールコマンド
+        ```
+        npm install --save react-native-snap-carousel
+        ```
 
 ## 以前ReactNative触ったときのメモ
 * [/ReactNative/開発時メモ](https://www.atsumare-senomori.com/5f03d83da681a0335d44dc1a)

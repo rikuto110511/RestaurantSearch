@@ -13,11 +13,13 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.atsumare-senomori.www",
+      "config": {
+        "googleMapsApiKey": "AIzaSyDEV1IMND5izyBu_JFjy2abeTSPkUh0HdM"
+      }
     },
     "android": {
       "config": {
